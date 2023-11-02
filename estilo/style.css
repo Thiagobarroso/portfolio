@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+:root {
+  --cor-texto1: #21243d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#navbar {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  max-width: 100%;
+  height: 3.1rem;
+}
+
+#navbar .menu-hamburguer {
+  display: none;
+}
+
+#navbar ul {
+  display: flex;
+  margin-right: 3.1rem;
+}
+
+#navbar ul li a {
+  padding: 0.65rem 1.25rem;
+  color: var(--cor-texto1);
+}
+
+#navbar ul li a:hover {
+  font-weight: bold;
+}
+
+#perfil {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 3.1rem 6.2rem;
+  gap: 6.25rem;
+  align-items: center;
+}
+
+#perfil h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--cor-texto1);
+  line-height: 1.3;
+}
+
+#perfil p {
+  color: #555555;
+}
+
+#perfil img {
+  max-width: 15.65rem;
+}
+
+.perfil-itens {
+  display: flex;
+  flex-direction: column;
+  gap: 1.87rem;
+}
+
+.perfil-itens button {
+  display: inline-block;
+  width: 11.25rem;
+  height: 2.5rem;
+  background-color: #0db3d8;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+}
+
+.perfil-itens button:hover {
+  cursor: pointer;
+  background-color: #10a0bc;
+}
+
+ion-icon {
+  font-size: 32px;
+  color: var(--cor-texto1);
+}
+
+ion-icon:hover {
+  color: #0db3d8;
+  cursor: pointer;
+}
+
+.stack {
+  margin-top: 20px;
+}
+
+.stack ul {
+  display: flex;
+  gap: 20px;
+}
+
+.stack ul li {
+  margin-top: 5px;
+  transition: transform 0.3s;
+}
+
+.stack ul li:hover {
+  transform: translateY(-8px);
+}
+
+@media (max-width: 850px) {
+  #perfil {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    margin: 1.5rem 3.2rem;
+  }
+  #perfil img {
+    max-width: 13rem;
+    margin-top: 10px;
+  }
+
+  .stack ul {
+    margin-top: 5px;
+    gap: 10px;
+  }
+
+  .stack ul li img {
+    width: 70px;
+  }
+
+  .img {
+    display: flex;
+    justify-content: center;
+  }
+  .perfil-itens {
+    align-items: center;
+    text-align: center;
+  }
+
+  #navbar ul {
+    display: none;
+  }
+
+  #navbar .menu-hamburguer {
+    display: block;
+    margin-right: 2rem;
+  }
+}
+
+/*BLOG */
+
+#section-blog {
+  background-color: #d9f8fc;
+  padding-top: 0.65rem;
+  padding-bottom: 2rem;
+}
+
+.blog-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 3.125rem 6.25rem;
+}
+
+.blog {
+  margin: 0rem 6.25rem;
+}
+
+.blog-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 1.25rem;
+}
+
+.blog-post p {
+  font-size: 0.87rem;
+}
+
+.post-info {
+  color: gray;
+}
+
+@media (max-width: 850px) {
+  .blog-content {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .blog-info {
+    margin: 1.5rem 3.2rem;
+  }
+
+  .blog {
+    margin: 1.5rem 3.2rem;
+  }
+}
+
+footer {
+  text-align: center;
+  margin: 20px;
+  color: var(--cor-texto1);
+}
+
+footer a {
+  color: var(--cor-texto1);
+}
+
+/*SECTION PROJETOS*/
+
+#projetos {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  gap: 20px;
+  margin: 50px 100px 0px 100px;
+}
+
+.projeto-text button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #d9f8fc;
+  color: #000;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+}
+
+.content-projeto {
+  margin-bottom: 40px;
+}
+.projetos-itens {
+  display: flex;
+  gap: 20px;
+  max-width: 100%;
+}
+
+.projeto-img img {
+  max-width: 100%;
+}
+
+@media (max-width: 850px) {
+  .projetos-itens {
+    flex-direction: column;
+  }
+}
+
+/*SECTION CONTATO*/
+
+#contato {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  gap: 20px;
+  margin: 50px 100px 100px 100px;
+}
+
+.contato-info {
+  display: flex;
+  gap: 50px;
+}
+
+.contato-itens {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contato-itens img {
+  padding: 20px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(217, 248, 252, 1);
+}
+
+@media (max-width: 780px) {
+  .contato-info {
+    flex-direction: column;
+  }
+}
