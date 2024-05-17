@@ -25,6 +25,7 @@ html {
 
 #navbar .menu-hamburguer {
   display: none;
+  margin-top: 40px;
 }
 
 #navbar ul {
@@ -50,7 +51,7 @@ html {
 }
 
 #perfil h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 600;
   color: var(--cor-texto1);
   line-height: 1.3;
@@ -98,6 +99,7 @@ ion-icon:hover {
 
 .stack {
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .stack ul {
@@ -152,6 +154,28 @@ ion-icon:hover {
     display: block;
     margin-right: 2rem;
   }
+}
+
+header {
+  position: relative;
+}
+
+.menu-hamburguer-mobile{
+  display: none;
+}
+
+.ativo {
+  position: absolute;
+  display: block;
+  right: 11%;
+  color: white;
+  background-color: red;
+  z-index: 100;
+}
+
+.menu-hamburguer-mobile a{
+ font-style: none;
+ color: white;
 }
 
 /*BLOG */
@@ -227,7 +251,7 @@ footer a {
   flex-direction: column;
   max-width: 100%;
   gap: 20px;
-  margin: 50px 100px 0px 100px;
+  margin: 50px 100px 50px 100px;
 }
 
 .projeto-text button {
