@@ -150,10 +150,19 @@ ion-icon:hover {
     display: none;
   }
 
+  #perfil h1 {
+    font-size: 2rem;
+  }
+
   #navbar .menu-hamburguer {
     display: block;
     margin-right: 2rem;
   }
+
+  header {
+    position: relative;
+  }
+  
 }
 
 header {
@@ -164,19 +173,23 @@ header {
   display: none;
 }
 
+
 .ativo {
   position: absolute;
   display: block;
+  padding: 10px;
   right: 11%;
-  color: white;
-  background-color: red;
+  background-color: white;
+  border: 2px solid #21243d;
   z-index: 100;
 }
 
-.menu-hamburguer-mobile a{
- font-style: none;
- color: white;
+.ativo a {
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #21243d;
 }
+
 
 /*BLOG */
 
@@ -316,3 +329,37 @@ footer a {
     flex-direction: column;
   }
 }
+
+
+.quadrado-seta {
+  display: none;
+  background-color: #0db3d8;
+  position: fixed;
+  z-index: 1000;
+  bottom: 10px; 
+  right: 10px; 
+  border-radius: 5px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+
+.quadrado-seta  a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 45px; 
+}
+
+.quadrado-seta:hover{
+  transform: scale(1.1);
+}
+
+
+
+
+
